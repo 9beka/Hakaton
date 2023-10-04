@@ -1,4 +1,31 @@
 @import url(./null.css);
 body {
    background-color: black;
+   color:#fff;
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.logotip{
+   display:flex;
+   align-items: center;
+}
+
+.navBar{
+   display:flex;
+   justify-content: space-between;
+   margin-top: 60px;
+   align-items: center;
+}
+.navigation ul{
+   display:flex;
+}
+.navigation a{
+   color: #fff;
+}
+.navigation  li{
+   display: flex;
+   margin-left:50px;
+   font-size: 17px;
+}
+.navigation  a:hover{
+   color: #55acee;
 }
