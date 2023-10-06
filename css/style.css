@@ -4,15 +4,19 @@ body {
    color:#fff;
    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+/* header */
+header{
+   padding: 60px 0;
+}
 .logotip{
    display:flex;
    align-items: center;
+
 }
 
 .navBar{
    display:flex;
    justify-content: space-between;
-   margin-top: 60px;
    align-items: center;
 }
 .navigation ul{
@@ -23,9 +27,36 @@ body {
 }
 .navigation  li{
    display: flex;
-   margin-left:50px;
+   margin:0 23px;
    font-size: 17px;
 }
 .navigation  a:hover{
    color: #55acee;
 }
+/* header */
+
+/* main */
+.mainTitle__Wrapper{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   text-align: center;
+   width: 48.5%;
+   z-index: 1;
+   margin: 0 auto;
+   
+}
+
+.mainTitle__Wrapper span{
+   color: #55acee;
+}
+.mainTitle__Wrapper h1{
+   font-size: 50px;
+}
+.mainTitle__paragraph{
+      padding-top: 40px;
+      font-size: 20px;
+      line-height:29.4px;
+}
+
+/* main */
