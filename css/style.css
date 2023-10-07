@@ -3,6 +3,7 @@ body {
    background-color: black;
    color:#fff;
    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   overflow-x: hidden;
 }
 /* header */
 header{
@@ -36,6 +37,9 @@ header{
 /* header */
 
 /* main */
+.mainTitle{
+   padding-top: 8% ;
+}
 .mainTitle__Wrapper{
    display: flex;
    flex-direction: column;
@@ -43,8 +47,8 @@ header{
    text-align: center;
    width: 48.5%;
    z-index: 1;
-   margin: 0 auto;
-   
+   margin: 0 auto;   
+
 }
 
 .mainTitle__Wrapper span{
@@ -58,5 +62,79 @@ header{
       font-size: 20px;
       line-height:29.4px;
 }
+.mainTitle__Wrapper img{
+   width: 64%;
+   margin: 0 auto;
+}
+.mainTitle__Wrapper:before {
+      position: absolute;
+      animation-name: frame,frame-reverse;
+      animation-duration: 1s,15s;
+      animation-delay: 0s,5s;
+      animation-direction: normal,normal;
+      animation-iteration-count: 1,infinite;
+      animation-timing-function: linear;
+      bottom: calc(-45.2vw / 1.95118110236);
+      left: -31.5vw;
+      width: calc(400px / .13175);
+      min-width: 100vw;
+      height: calc(100vw * .20833333333);
+      background-image: url(../img/Frame.png);
+      background-position: 50% 50%;
+      background-repeat: no-repeat;
+      background-size: 100%;
+      z-index: -1;
+      content: ""
+  }
 
-/* main */
+ 
+.about__us { 
+   text-align: center; 
+   display: flex;
+   justify-content: center;
+   flex-direction: column;
+}
+.about__us h2{ 
+   font-size: 50px;
+}
+.about__us p{ 
+   text-align: center; 
+   font-size: 24px;
+   
+}
+.about__us span { 
+   color: #55acee;
+}
+.about__descr{
+   font-weight: 700;
+   font-size: 20px;
+   padding-top: 40px;
+   padding-bottom: 25px;
+}
+
+  @keyframes frame {
+   0%,35%,50% {
+       opacity: 0;
+       left: calc(-31.5vw);
+       transform: translateY(+25vh)
+   }
+
+   70% {
+       opacity: .7
+   }
+
+   100% {
+       opacity: 1;
+       left: calc(-31.5vw)
+   }
+}
+
+@keyframes frame-reverse {
+   0% {
+       left: calc(-31.5vw)
+   }
+
+   100% {
+       left: calc(-31.5vw - (3036px - 100vw + 10px))
+   }
+}  
