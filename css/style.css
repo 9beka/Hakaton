@@ -4,10 +4,16 @@ body {
    color:#fff;
    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
    overflow-x: hidden;
+ 
 }
 /* header */
 header{
-   padding: 60px 0;
+   /* padding: 60px 0; */
+   position: fixed;
+   width: 100%;
+   padding: 20px 0;
+   background-color: #000;
+
 }
 .logotip{
    display:flex;
@@ -103,7 +109,6 @@ header{
 .about__us p{ 
    text-align: center; 
    font-size: 24px;
-
 }
 .about__us span { 
    color: #55acee;
@@ -142,10 +147,10 @@ header{
    width: 100%;
    z-index: -2;
 }
-.box{
+/* .box{
    text-align: left;
    margin-top: 25px;
-}
+} */
 .container__ourplus{
    padding: 100px 100px ;
   

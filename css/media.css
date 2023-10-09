@@ -16,23 +16,126 @@
       font-size: 30px;
       transition: .3s ease-in-out;
    }
-    h1{
-      font-size: 30px;
+   .mainTitle__Wrapper h1{
+      font-size: 20px;
    }
+   .mainTitle__paragraph{
+      font-size: 17px;
+}
    .show-nav{
       right: 0;
    }
+   .about__us h2{ 
+      font-size: 30px;
+   }
+   .about__us p{ 
+      text-align: center; 
+      font-size: 14px;
+   }
+   .about__descr{
+      font-weight: 500;
+      font-size: 18px;
+      padding-top: 30px;
+      padding-bottom: 20px;
+   }
+ 
+   .about__width{
+      max-width: 60%;
+      margin: 0 auto;
+   }
+ 
+  .ourplus__row{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+  }
+  .container__ourplus{
+   padding: 5px 5px ;
+
+}
+.ourplus__box{
+   padding-left: 7px;
+}
+.ourplus__row{
+   justify-content: center;
+}
+.ourplusTitle{
+   font-size: 25px;
+   margin-top: 15px;
+}
+.ourplusparagraph{
+   font-size: 18px;
+   padding-bottom: 10px;
+   width: 100%;
+}
+#contacts{
+   text-align: center; 
+}
+.logotip{
+   display: none;
+}
+.contacts__row{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+.message{
+   padding: 10px;
+}
+}
+.contacts__paragrph{
+   padding: 10;
+
+}
+.right{
+   padding: 50px ;
+}
+.contacts__social{
+   width: 200px;
+}
+.message{
+   font-size: larger;
 }
 @media (min-width: 1200px) {
 
   }
-/* Для некоторых нетбуков и планшетов (таблеток) */
+
 @media (min-width: 768px) and (max-width: 979px) {
-
+   .swiper-button-prev {
+      left: 90%;
+   }
+   .swiper-button-next {
+      left: 90%;
+   }
  }
-/* Для планшетов и некоторых телефонов */
-@media (max-width: 767px) {  }
-/* Для телефонов и некоторых устройств у которых совсем маленький экран */
-@media (max-width: 480px) { }
 
 
+@media (max-width: 768px) {
+   .slider__flex {
+     flex-direction: column; 
+   }
+ 
+   .slider__name {
+     text-align: center; /* Выравнивание текста по центру */
+   }
+ 
+   .slider__songWRapper {
+     display: flex;
+    
+     align-items: center; /* Выравнивание элементов по центру */
+     height: 243px;
+   }
+   .slider__songWRapper p{
+     display: none;
+   }
+ 
+   .col-2 {
+     display: none; 
+   }
+   .swiper-button-prev {
+      left: 90%;
+   }
+   .swiper-button-next {
+      left: 90%;
+   }
+ }

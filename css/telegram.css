@@ -1,0 +1,63 @@
+.modalBackrop {
+   position: fixed;
+   width: 100%;
+   height: 100%;
+   top: 0;
+   bottom: 0;
+   z-index: 2;
+   backdrop-filter: blur(30px);
+   opacity: 0;
+   visibility: hidden;
+   transition: 0.5s;
+}
+
+.modalBackropActive {
+   opacity: 1;
+   visibility: visible;
+}
+
+.modal {
+   position: fixed;
+   left: 0;
+   right: 0;
+   bottom: 0;
+   top: 0;
+   margin: auto;
+   width: 50%;
+   height: 70%;
+   scale: 0;
+   background-color: #fff;
+   transition: 0.5s;
+   z-index: 3;
+   /* padding: 20px; */
+}
+
+.modalActive {
+   scale: 1;
+}
+
+.modalHeader {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 0 10px;
+   background-color: coral;
+}
+
+.modalHeader {
+   cursor: pointer;
+}
+
+.hideModalContent {
+   display: none;
+}
+.wrapInput{
+   margin: 10px;
+   padding: 10px;
+   width: 50%;
+}
+.wrapInput input{
+   padding: 10px;
+   margin: 5px;
+   border-radius: 5%;
+}
