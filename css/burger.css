@@ -3,7 +3,8 @@
    align-items: center;
    width: 55px;
    height: 30px;
-   z-index: 3;
+   z-index: 8;
+   background-color: #000;
 }
 .mobile-btn span{
    width: 100%;
@@ -52,13 +53,15 @@
    top: 0;
    bottom: 0;
    backdrop-filter: blur(10px);
-   z-index: -1;
+   z-index: 6;
    opacity: 0;
    visibility: hidden;
    transition: .3s ease-in-out;
-   background-color: #000;
+   
+   
 }
 .show-backdrop{
    opacity: 1;
    visibility: visible;
+   background-color: #000;
 }
