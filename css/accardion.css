@@ -1,0 +1,49 @@
+/* ACCARDION */
+#qustions{
+   padding: 100px 0;
+   color: #fff;
+  
+}
+#qustions h2{
+   font-size: 40px;
+   text-align: center;
+   padding-bottom: 50px;
+}
+.accordion{
+ border-radius: 5%;
+ background-color: #1A1B1F;
+ padding: 20px;
+}
+.accordion__name {
+   display: flex;
+   justify-content: space-between;
+   background-color: #1A1B1F;
+   align-items: center;
+   padding: 20px;
+   box-shadow: rgb(0 0 0 / 20%) 0px 2px 1px -1px, rgb(0 0 0 / 14%) 0px 1px 1px 0px, rgb(0 0 0 / 12%) 0px 1px 3px 0px;
+   margin-bottom: 10px;
+}
+
+.plus {
+   width: 30px;
+   height: 30px;
+}
+
+.accordion__content {
+   display: none;
+}
+
+.accordion__content p {
+   padding: 20px;
+   font-size: 20px;
+}
+
+
+.accordion__wrap.accordion__active .accordion__content {
+   display: block;
+}
+
+.accordion__wrap.accordion__active .plus {
+   rotate: 45deg;
+}
+/* ACCARDION */

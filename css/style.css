@@ -3,16 +3,21 @@ body {
    background-color: black;
    color:#fff;
    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   overflow-x: hidden;
+}
+/* header */
+header{
+   padding: 60px 0;
 }
 .logotip{
    display:flex;
    align-items: center;
+
 }
 
 .navBar{
    display:flex;
    justify-content: space-between;
-   margin-top: 60px;
    align-items: center;
 }
 .navigation ul{
@@ -23,9 +28,220 @@ body {
 }
 .navigation  li{
    display: flex;
-   margin-left:50px;
+   margin:0 23px;
    font-size: 17px;
 }
 .navigation  a:hover{
    color: #55acee;
+}
+/* header */
+
+/* main */
+.mainTitle{
+   padding-top: 8% ;
+}
+.mainTitle__Wrapper{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   text-align: center;
+   width: 48.5%;
+   z-index: 1;
+   margin: 0 auto;   
+
+}
+
+.mainTitle__Wrapper span{
+   color: #55acee;
+}
+.mainTitle__Wrapper h1{
+   font-size: 50px;
+}
+.mainTitle__paragraph{
+      padding-top: 40px;
+      font-size: 20px;
+      line-height:29.4px;
+}
+.mainTitle__Wrapper img{
+   width: 64%;
+   margin: 0 auto;
+}
+.mainTitle__Wrapper:before {
+   /* position: absolute;
+   animation-name: frame, frame-reverse;
+   animation-duration: 10s, 3s;
+   animation-delay: 1s, 2s;
+   animation-direction: normal, normal;
+   animation-iteration-count: 1, infinite;
+   animation-timing-function: linear;
+   bottom: -55%;
+   left: -15%;
+   width: 130%;
+   min-width: 100vw;
+   height: 30vw;
+   background-image: url('../img/Frame.png');
+   background-attachment: fixed;
+   background-position: 50% 50%;
+   background-repeat: no-repeat;
+   background-size: 100%;
+   z-index: -1;
+   content: "" */
+  }
+
+ #about{
+   position: relative;
+ }
+.about__us { 
+   text-align: center; 
+   display: flex;
+   justify-content: center;
+   flex-direction: column;
+}
+.about__us h2{ 
+   font-size: 50px;
+}
+.about__us p{ 
+   text-align: center; 
+   font-size: 24px;
+
+}
+.about__us span { 
+   color: #55acee;
+}
+.about__descr{
+   font-weight: 700;
+   font-size: 20px;
+   padding-top: 40px;
+   padding-bottom: 25px;
+}
+.about__width{
+   max-width: 80%;
+   margin: 0 auto;
+}
+
+
+
+/* OUR PLUS */
+#ourplus{
+   position: relative;
+}
+
+.image-container {
+   position: relative;
+}
+
+.image-container img {
+   max-width: 100%;
+   height: auto;
+}
+
+.our-plus__video-spectrum {
+   position: absolute;
+   top: 79%; 
+   left: 0;
+   width: 100%;
+   z-index: -2;
+}
+.box{
+   text-align: left;
+   margin-top: 25px;
+}
+.container__ourplus{
+   padding: 100px 100px ;
+  
+}
+.ourplus__box{
+   padding-left: 70px;
+}
+.ourplusTitle{
+   font-size: 20px;
+   margin-top: 35px;
+   color: #DCDCDC;
+}
+.ourplusparagraph{
+   font-size: 14px;
+   padding-bottom: 110px;
+   width: 75%;
+}
+/* OUR PLUS */
+
+
+
+/* FOOTER */
+#contacts {
+   padding: 20px;
+}
+   #contacts h2{
+      font-size: 50px;
+   }
+   .message{
+      color: #fff;
+      background-color: #005292;
+      width: 200px;
+      padding: 20px;
+      border-radius: 50px;
+   }
+   
+   .contacts__paragrph{
+      padding: 20px 0 ;
+      font-size: 24px;
+   }
+   .contacts__row{
+      display: flex;
+      row-gap:10px ;
+   }
+   .contacts__social{
+      display: flex;
+      padding: 10px;
+      border-radius: 50px;
+      column-gap: 5px;
+      align-items: center;
+      background-color: #2C3136;
+      color: #87888A;
+   }
+   .contacts__social:hover{
+      background-color: hotpink;
+   }
+   .contacts__social a{
+      
+      color: #87888A;
+   }
+   .right{
+      padding: 100px ;
+   }
+   
+/* FOOTER */
+  /* @keyframes frame {
+   0%,35%,50% {
+       opacity: 0;
+       left: calc(-31.5vw);
+       transform: translateY(+25vh)
+   }
+
+   70% {
+       opacity: .7
+   }
+
+   100% {
+       opacity: 1;
+       left: calc(-31.5vw)
+   }
+}
+
+@keyframes frame-reverse {
+   0% {
+       left: calc(-31.5vw)
+   }
+
+   100% {
+       left: calc(-31.5vw - (3036px - 100vw + 10px))
+   }
+}   */
+@keyframes frame-reverse{
+   0%{
+      transform: translateZ(0);
+   }
+   to{
+      transform: translate3d(-100%,0,0);
+   }
 }
