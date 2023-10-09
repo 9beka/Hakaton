@@ -6,6 +6,10 @@
    <title>Document</title>
    <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
    <link rel="stylesheet" href="./css/style.css">
+   <link rel="stylesheet" href="./css/burger.css">
+   <link rel="stylesheet" href="./css/media.css">
+   <link rel="stylesheet" href="./css/slider.css">
+   <link rel="stylesheet" href="./css/accardion.css">
 </head>
 <body>
    <header>
@@ -13,13 +17,18 @@
          <div class="navBar ">
             <div class="logotip"><img src="./img/logo.svg" alt="logo" ></div>
             <nav class="navigation">
-               <ul>
+               <ul class="nav">
                   <li><a href="#">Главная</a></li>
                   <li><a href="#">О нас</a></li>
                   <li><a href="#qustions">Частые вопросы</a></li>
-                
-                  <li><a href="#">Контакты</a></li>
+                  <li><a href="#contacts">Контакты</a></li>
                </ul>
+               <div class="mobile-btn">
+                  <span></span>
+              </div>
+          </div>
+      </div>
+      <div class="backdrop"></div>
             </nav>
          </div>
       </div>
@@ -38,7 +47,6 @@
                   Дистрибуция XXI века для лейблов и артистов. Хочешь чтобы тебя услышали? Тогда тебе к нам! Присылай демо и погнали в топы).
                </p>
                <img src="./img/Mockup.png" alt="">
-            
             </div>
          </div>
       </section>
@@ -140,9 +148,9 @@
       <section id="ourplus">
          <div class="container">
             <div class="container__ourplus">
-               <div class="row">
+               <div class="row ourplus__row">
                   <div class="col-4">
-                     <div class="box">
+                     <div class="box ourplus__box">
                         <h3 class="ourplusTitle">Сбор авторских</h3>
                         <p class="ourplusparagraph">Помогаем артистам и лейблам получать дополнительные вознаграждения от музыкальных площадок.</p>
                         <h3 class="ourplusTitle">Гибкость сотрудничества</h3>
@@ -235,8 +243,42 @@
           </div>
       </div>
   </section>
-  
+      <section id="contacts">
+         <div class="container">
+            <div class="logotip"><img src="./img/logo.svg" alt="logo" ></div>
+            <h2>Контакты</h2>
+            <div class="row contacts__row">
+               <div class="col-6">
+                  <p class="contacts__paragrph">Отдел по работе с артистами с 10:00 до 21:00 по МСК</p>
+                  <h3 class="contacts__paragrph">E-mail: adspace@list.ru</h3>
+                  <div class="box contacts__box">
+                     <p class="contacts__paragrph">Мы готовы прослушать ваш материал и обсудить условия. Пишите, будем рады пообщаться!</p>
+                       
+                  </div>
+               </div>
+               <div class="col-6 right">
+                  <div class="box ">
+                     <button class="message">Написать нам</button>
+                           <div class="contacts__btn">
+                              <button class="contacts__social">
+                                 <img src="./img/telegram.svg" alt="">
+                                 <a href="https://t.me/bekazmr">Сообщество</a>
+                               </button>
+                           </div>
+                          
+                              <div class="contacts__btn">
+                                 <button class="contacts__social">
+                                    <img src="./img/telegrammm.svg" alt="">
+                                    <a href="https://t.me/bekazmr">Telegram</a>
+                                 </button>
+                              </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
    </main>
+   <script src="./burger.js"></script>
    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
  <script src="./app.js"></script>
 </body>

@@ -1,0 +1,38 @@
+@media(max-width: 820px){
+   .mobile-btn{
+      display: flex;
+   }
+   .nav{
+      position: fixed;
+      right: -100%;
+      top: 0;
+      width: 80%;
+      height: 100%;
+      background-color: #060809;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      row-gap: 30px;
+      font-size: 30px;
+      transition: .3s ease-in-out;
+   }
+    h1{
+      font-size: 30px;
+   }
+   .show-nav{
+      right: 0;
+   }
+}
+@media (min-width: 1200px) {
+
+  }
+/* Для некоторых нетбуков и планшетов (таблеток) */
+@media (min-width: 768px) and (max-width: 979px) {
+
+ }
+/* Для планшетов и некоторых телефонов */
+@media (max-width: 767px) {  }
+/* Для телефонов и некоторых устройств у которых совсем маленький экран */
+@media (max-width: 480px) { }
+
+
