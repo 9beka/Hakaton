@@ -20,7 +20,6 @@ const showAccardion = () =>{
       })
    })
 }
-
 showAccardion()
 
 const notClose = () =>{
@@ -33,3 +32,4 @@ const notClose = () =>{
    })
 }
 notClose()
+

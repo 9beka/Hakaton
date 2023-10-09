@@ -73,16 +73,16 @@ header{
    margin: 0 auto;
 }
 .mainTitle__Wrapper:before {
-   /* position: absolute;
+   position: absolute;
    animation-name: frame, frame-reverse;
-   animation-duration: 10s, 3s;
+   animation-duration: 10s, 5s;
    animation-delay: 1s, 2s;
    animation-direction: normal, normal;
-   animation-iteration-count: 1, infinite;
+   animation-iteration-count: 0, infinite;
    animation-timing-function: linear;
-   bottom: -55%;
+   bottom: -25%;
    left: -15%;
-   width: 130%;
+   width: 100%;
    min-width: 100vw;
    height: 30vw;
    background-image: url('../img/Frame.png');
@@ -91,7 +91,7 @@ header{
    background-repeat: no-repeat;
    background-size: 100%;
    z-index: -1;
-   content: "" */
+   content: ""
   }
 
  #about{
@@ -179,7 +179,7 @@ header{
    #contacts h2{
       font-size: 50px;
    }
-   .message{
+   .apply{
       color: #fff;
       background-color: #005292;
       width: 200px;
@@ -214,34 +214,7 @@ header{
    .right{
       padding: 100px ;
    }
-   
-/* FOOTER */
-  /* @keyframes frame {
-   0%,35%,50% {
-       opacity: 0;
-       left: calc(-31.5vw);
-       transform: translateY(+25vh)
-   }
 
-   70% {
-       opacity: .7
-   }
-
-   100% {
-       opacity: 1;
-       left: calc(-31.5vw)
-   }
-}
-
-@keyframes frame-reverse {
-   0% {
-       left: calc(-31.5vw)
-   }
-
-   100% {
-       left: calc(-31.5vw - (3036px - 100vw + 10px))
-   }
-}   */
 @keyframes frame-reverse{
    0%{
       transform: translateZ(0);
